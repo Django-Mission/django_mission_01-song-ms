@@ -19,8 +19,9 @@ from . import views
 
 
 urlpatterns = [
+    # test polls
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
-    path('about/', views.lotto),
+    path('lotto/', views.lotto),
     # path(r'^$',)
 ]
