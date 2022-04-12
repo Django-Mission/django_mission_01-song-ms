@@ -2,14 +2,7 @@ from django.shortcuts import render
 import random
 
 def lotto(request):
-    foods = ['apple', 'banana', 'coconut', ]
-    info = {
-       'name': 'Harry'
-    }
-    context = {
-        'info': info,
-        'foods': foods,
-    }
+    
     lotto_num = []
     for _ in range(7):
         lotto_num.append(random.randint(1,45))
